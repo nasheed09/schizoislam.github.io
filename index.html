@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seenat</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+    max-width: 100vw; /* Set maximum width to the width of the device */
+    margin: 20px auto;
+    text-align: center;
+}
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px; 
+    }
+    .image {
+    flex: 0 0 calc(25% - 40px); 
+    margin: 20px; 
+    cursor: pointer;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image img {
+    width: auto;
+    height: 90%; 
+    max-width: 100%; 
+    border-radius: 5px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Archaeology and Myth</h2>
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Archaeology/Fingerprints of the Gods.pdf')">
+            <img src="Images/Archaeology/Fingerprints of the Gods.jpg" alt="Fingerprints of the Gods">
+            <b>Fingerprints of the Gods</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Archaeology/Forbidden Archeology.pdf')">
+            <img src="Images/Archaeology/Forbidden Archeology.jpg" alt="Forbidden Archeology">
+            <b>Forbidden Archeology</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Archaeology/The Message of the Sphinx.pdf')">
+            <img src="Images/Archaeology/The Message of the Sphinx.jpg" alt="The Message of the Sphinx">
+            <b>The Message of the Sphinx</b>
+        </div> <div class="image" onclick="openPDF('Books/Myths/Myths to Live By.pdf')">
+            <img src="Images/Myths/Myths to Live By.jpg" alt="Myths to Live By">
+            <b>Myths to Live By</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Islam</h2>
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Islam/The Essential Koran.pdf')">
+            <img src="Images/Islam/Essential Koran.jpg" alt="The Essential Koran">
+            <b>The Essential Koran</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Islam/The Heart of Islam.pdf')">
+            <img src="Images/Islam/The Heart of Islam.jpg" alt="The Heart of Islam">
+            <b>The Heart of Islam</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Islam/The Vision of Islam.pdf')">
+            <img src="Images/Islam/The Vision of Islam.jpg" alt="The Vision of Islam">
+            <b>The Vision of Islam</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/Islam/Understanding Islam.pdf')">
+                <img src="Images/Islam/understanding islam frithjof schuon.jpg" alt="Understanding Islam">
+                <b>Understanding Islam</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Plato & Aristotle</h2>
+    <!-- Row 3 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Aristotle De Anima.pdf')">
+            <img src="Images/Plato and Aristotle/Aristotle De Anima.jpg" alt="Aristotle De Anima">
+            <b>Aristotle De Anima</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Aristotle Physics.pdf')">
+            <img src="Images/Plato and Aristotle/Aristotle Physics.jpg" alt="Aristotle Physics">
+            <b>Aristotle Physics</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Aristotle The Metaphysics.pdf')">
+            <img src="Images/Plato and Aristotle/Aristotle The Metaphysics.jpg" alt="Aristotle The Metaphysics">
+            <b>Aristotle The Metaphysics</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Apology.pdf')">
+                <img src="Images/Plato and Aristotle/Plato Apology.jpg" alt="Plato Apology">
+                <b>Plato Apology</b>
+        </div>
+    </div>
+</div>
+<!-- Row 4-->
+<div class="container">
+<div class="row">
+    <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Gorgias.pdf')">
+        <img src="Images/Plato and Aristotle/Plato Gorgias.jpeg" alt="Plato Gorgias">
+        <b>Plato Gorgias</b>
+    </div>
+    <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Meno.pdf')">
+        <img src="Images/Plato and Aristotle/Plato Meno.png" alt="Plato Meno">
+        <b>Plato Meno</b>
+    </div>
+    <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Parmanides.pdf')">
+        <img src="Images/Plato and Aristotle/Plato Parmenides.jpg" alt="Plato Parmenides">
+        <b>Plato Parmenides</b>
+    </div>
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Phaedo.pdf')">
+            <img src="Images/Plato and Aristotle/Plato Phaedo.jpg" alt="Plato Phaedo">
+            <b>Plato Phaedo</b>
+    </div>
+</div>
+</div>
+</div>
+<div class="container">
+    <!-- Row 5 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato the Symposium.pdf')">
+            <img src="Images/Plato and Aristotle/Plato Symposium.jpg" alt="Plato Symposium">
+            <b>Plato Symposium</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato The Republic.pdf')">
+            <img src="Images/Plato and Aristotle/Plato The Republic.jpg" alt="Plato The Republic">
+            <b>Plato The Republic</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Theaetetus.pdf')">
+            <img src="Images/Plato and Aristotle/Plato Theaetetus.jpg" alt="Plato Theaetetus">
+            <b>Plato Theaetetus</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/Plato and Aristotle/Plato Timaeus.pdf')">
+                <img src="Images/Plato and Aristotle/Plato Timaeus.jpg" alt="Plato Timaeus">
+                <b>Plato Timaeus</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>History, Politics and Sociology</h2>
+    <!-- Row 6 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/Economic Facts and Fallacies.pdf')">
+            <img src="Images/History, Politics, Sociology/Economic Facts and Fallacies.jpg" alt="Economic Facts and Fallacies">
+            <b>Economic Facts and Fallacies</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/Muhammad Prophet of Peace Amid the Clash of Empires.pdf')">
+            <img src="Images/History, Politics, Sociology/Muhammad by juan cole.jpg" alt="Muhammad by juan cole">
+            <b>Muhammad by Juan Cole</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/The Brothers Karamazov.pdf')">
+            <img src="Images/History, Politics, Sociology/The Brothers Karamazov.jpg" alt="The Brothers Karamazov">
+            <b>The Brothers Karamazov</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/History, Politics, Sociology/The Case for Islamo-Christian Civilization.pdf')">
+                <img src="Images/History, Politics, Sociology/The Case for the Islamo-Christian Civilisation.jpg" alt="The Case for the Islamo-Christian Civilisation">
+                <b>The Case for the Islamo-Christian Civilisation</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!-- Row 7 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/The Great Arab Conquests.pdf')">
+            <img src="Images/History, Politics, Sociology/The Great Arab Conquests.jpg" alt="The Great Arab Conquests">
+            <b>The Great Arab Conquests</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/The Muqaddimah An Introduction to History.pdf')">
+            <img src="Images/History, Politics, Sociology/The Muqaddimah.jpg" alt="The Muqaddimah">
+            <b>The Muqaddimah</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/History, Politics, Sociology/Tragedy and Hope 101.pdf')">
+            <img src="Images/History, Politics, Sociology/Tragedy and Hope 101.jpg" alt="Tragedy and Hope 101">
+            <b>Tragedy and Hope 101</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/History, Politics, Sociology/Wall Street and The Rise of Hitler.pdf')">
+                <img src="Images/History, Politics, Sociology/Wall Street and the Rise of Hitler.jpg" 
+                alt="Wall Street and The Rise of Hitler">
+                <b>Wall Street and The Rise of Hitler</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Science</h2>
+    <!-- Row 8 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Science/A New Model for Health and Disease.pdf')">
+            <img src="Images/Science/A New Model for Health and Disease.jpg" alt="A New Model for Health and Disease">
+            <b>A New Model for Health and Disease</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Science/Bechamp or Pasteur.pdf')">
+            <img src="Images/Science/Bechamp or Pasteur.jpg" alt="Bechamp or Pasteur">
+            <b>Bechamp or Pasteur</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Science/Critique of Evolutionary Theory.pdf')">
+            <img src="Images/Science/Critique of Evolutionary Theory.jpeg" alt="Critique of Evolutionary Theory">
+            <b>Critique of Evolutionary Theory</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/Science/Memory Craft.pdf')">
+                <img src="Images/Science/Memory Craft.jpg" 
+                alt="Memory Craft">
+                <b>Memory Craft</b>
+        </div>
+    </div>
+</div>
+<div class="container">
+   <!-- Row 9 -->
+    <div class="row">
+        <div class="image" onclick="openPDF('Books/Science/Science and Myth.pdf')">
+            <img src="Images/Science/Science & Myth.jpg" alt="Science & Myth">
+            <b>Science & Myth</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Science/That Hideous Strength.pdf')">
+            <img src="Images/Science/That Hideous Strength.jpg" alt="That Hideous Strength">
+            <b>That Hideous Strength</b>
+        </div>
+        <div class="image" onclick="openPDF('Books/Science/The Science Delusion.pdf')">
+            <img src="Images/Science/The Science Delusion.jpg" alt="The Science Delusion">
+            <b>The Science Delusion</b>
+        </div>
+            <div class="image" onclick="openPDF('Books/Science/The Wisdom of Ancient Cosmology.pdf')">
+                <img src="Images/Science/The Wisdom of Ancient Cosmology.jpg" 
+                alt="The Wisdom of Ancient Cosmology">
+                <b>The Wisdom of Ancient Cosmology</b>  
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>General Modernism</h2>
+    <!-- Row 10 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/General Modernism/Amusing Ourselves to Death.pdf')">
+             <img src="Images/General Modernism/Amusing Ourselves to Death.jpg" alt="Amusing Ourselves to Death">
+             <b>Amusing Ourselves to Death</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/General Modernism/Architects of the Culture of Death.pdf')">
+             <img src="Images/General Modernism/Architects of the Culture of Death.jpg" alt="Architects of the Culture of Death">
+             <b>Architects of the Culture of Death</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/General Modernism/Brave New World.pdf')">
+             <img src="Images/General Modernism/Brave New World.jpg" alt="Brave New World">
+             <b>Brave New World</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/General Modernism/Dumbing Us Down.pdf')">
+                 <img src="Images/General Modernism/Dumbing Us Down.jpg" 
+                 alt="Dumbing Us Down">
+                 <b>Dumbing Us Down</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <!-- Row 11 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/General Modernism/Propaganda.pdf')">
+             <img src="Images/General Modernism/Propaganda.jpg" alt="Propaganda">
+             <b>Propaganda</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/General Modernism/Strange New World.pdf')">
+             <img src="Images/General Modernism/Strange New World.jpg" alt="Strange New World">
+             <b>Strange New World</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/General Modernism/The Impossible State.pdf')">
+             <img src="Images/General Modernism/The Impossible State.jpg" alt="The Impossible State">
+             <b>The Impossible State</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/General Modernism/Why LIberalism Failed.pdf')">
+                 <img src="Images/General Modernism/Why LIberalism Failed.jpg" 
+                 alt="Why LIberalism Failed">
+                 <b>Why LIberalism Failed</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <h2>Metaphysics</h2>
+    <!-- Row 12 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Metaphysics/Initiation and Spiritual Realization.pdf')">
+             <img src="Images/Metaphysics/Initiation & Spiritual Relalization.jpg" alt="Initiation and Spiritual Realization">
+             <b>Initiation and Spiritual Realization</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics/Perspectives on Initiation .pdf')">
+             <img src="Images/Metaphysics/Perspectives on Initiation.jpg" alt="Perspectives on Initiation ">
+             <b>Perspectives on Initiation</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics/Prolegomena to the Metaphysics of Islam.pdf')">
+             <img src="Images/Metaphysics/Prolegomena to the Metaphysics of Islam.jpg" alt="Prolegomena to the Metaphysics of Islam">
+             <b>Prolegomena to the Metaphysics of Islam</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Metaphysics/Symbols of Sacred Science.pdf')">
+                 <img src="Images/Metaphysics/Symbols of Sacred Science.jpg" 
+                 alt="Symbols of Sacred Science">
+                 <b>Symbols of Sacred Science</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <!-- Row 13 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Metaphysics/The Metacritique of Kant and the Possibility of Metaphysics.pdf')">
+             <img src="Images/Metaphysics/The Metacritique of Kant and the Possibility of Metaphysics.jpg" alt="The Metacritique of Kant and the Possibility of Metaphysics">
+             <b>The Metacritique of Kant and the Possibility of Metaphysics</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics/The Quantum Enigma_ Finding the Hidden Key.pdf')">
+             <img src="Images/Metaphysics/The Quantum Enigma.jpg" alt="The Quantum Enigma-Finding the Hidden Key">
+             <b>The Quantum Enigma-Finding the Hidden Key</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics/Things as They Are.pdf')">
+             <img src="Images/Metaphysics/Things as They Are.jpg" alt="Things as They Are">
+             <b>Things as They Are</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Metaphysics/Transcendent Unity of Religions.pdf')">
+                 <img src="Images/Metaphysics/The Transcendent Unity of Religions.jpg" 
+                 alt="Transcendent Unity of Religions">
+                 <b>Transcendent Unity of Religions</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <h2>Philosophy</h2>
+    <!-- Row 14 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Philosophy/Aristotles Rhetoric For Everybody.pdf')">
+             <img src="Images/Philosophy/Aristotle's Rhetoric For Everybody.jpg" alt="Aristotle's Rhetoric For Everybody">
+             <b>Aristotle's Rhetoric For Everybody</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Philosophy/Gwynnes Grammar.pdf')">
+             <img src="Images/Philosophy/Gwynnes Grammar.jpg" alt="Gwynnes Grammar">
+             <b>Gwynnes Grammar</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Philosophy/Socratic Logic.pdf')">
+             <img src="Images/Philosophy/Socratic Logic.jpg" alt="Socratic Logic">
+             <b>Socratic Logic</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Philosophy/Tao Te Ching - The Essential Tao.pdf')">
+                 <img src="Images/Philosophy/Tao Te Ching - The Essential Tao.jpg" 
+                 alt="Tao Te Ching - The Essential Tao">
+                 <b>Tao Te Ching - The Essential Tao</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <!-- Row 15 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Philosophy/The Drama of Atheist Humanism.pdf')">
+             <img src="Images/Philosophy/The Drama of Atheist Humanism.jpg" alt="The Drama of Atheist Humanism">
+             <b>The Drama of Atheist Humanism</b>
+         </div>
+
+         <div class="image" onclick="openPDF('Books/Philosophy/The Existence of God.pdf')">
+             <img src="Images/Philosophy/The Existence of God.jpg" alt="The Existence of God">
+             <b>The Existence of God</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Philosophy/The Need for a Sacred Science.pdf')">
+                 <img src="Images/Philosophy/The Need for a Sacred Science.jpg" 
+                 alt="The Need for a Sacred Science">
+                 <b>The Need for a Sacred Science</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <h2>Spiritual Warfare</h2>
+    <!-- Row 16 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Self Overcoming of Nihilism.pdf')">
+             <img src="Images/Spiritual Warfare/The Self Overcoming of Nihilism.jpg" alt="The Self Overcoming of Nihilism">
+             <b>The Self Overcoming of Nihilism</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Spiritist Fallacy.pdf')">
+             <img src="Images/Spiritual Warfare/The Spiritist Fallacy.jpg" alt="The Spiritist Fallacy">
+             <b>The Spiritist Fallacy</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/Theosophy History of a Pseudo-Religion.pdf')">
+             <img src="Images/Spiritual Warfare/Theosophy History of a Pseudo-Religion.jpg" 
+             alt="Theosophy History of a Pseudo-Religion">
+             <b>Theosophy History of a Pseudo-Religion</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Alien.pdf')">
+                 <img src="Images/Spiritual Warfare/The Alien.jpg" 
+                 alt="The Alien">
+                 <b>The Alien-Disclosure Deception</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <!-- Row 17 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/A Catholic Viewpoint on the Four Temperaments.pdf')">
+             <img src="Images/Spiritual Warfare/A Catholic Viewpoint on the Four Temperaments.jpg" 
+             alt="A Catholic Viewpoint on the Four Temperaments">
+             <b>A Catholic Viewpoint on the Four Temperaments</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Devil Knows Latin.pdf')">
+             <img src="Images/Spiritual Warfare/The Devil Knows Latin.jpg" alt="The Devil Knows Latin">
+             <b>The Devil Knows Latin</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Noonday Devil.pdf')">
+             <img src="Images/Spiritual Warfare/The Noonday Devil.jpg" alt="The Noonday Devil">
+             <b>The Noonday Devil</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Spiritual Warfare/The Screwtape Letters.pdf')">
+                 <img src="Images/Spiritual Warfare/The Screwtape Letters.jpg" 
+                 alt="The Screwtape Letters">
+                 <b>The Screwtape Letters</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <h2>Metaphysics of Modernity</h2>
+    <!-- Row 18 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Metaphysics of Modernity/East and West.pdf')">
+             <img src="Images/Metaphysics of Modernity/East and West.jpg" alt="East and West">
+             <b>East and West</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics of Modernity/Introduction to the Study of the Hindu Doctrines.pdf')">
+             <img src="Images/Metaphysics of Modernity/Introduction to the Study of the Hindu Doctrines.jpg" alt="Introduction to the Study of the Hindu Doctrines">
+             <b>Introduction to the Study of the Hindu Doctrines</b>
+         </div>
+         <div class="image" onclick="openPDF('Books/Metaphysics of Modernity/Spiritual Authority and Temporal Power.pdf')">
+             <img src="Images/Metaphysics of Modernity/Spiritual Authority and Temporal Power.jpg" alt="Spiritual Authority and Temporal Power">
+             <b>Spiritual Authority and Temporal Power</b>
+         </div>
+             <div class="image" onclick="openPDF('Books/Metaphysics of Modernity/The Crisis of the Modern World.pdf')">
+                 <img src="Images/Metaphysics of Modernity/The Crisis of the Modern World.jpg" 
+                 alt="The Crisis of the Modern World">
+                 <b>The Crisis of the Modern World</b>  
+         </div>
+     </div>
+ </div>
+ <div class="container">
+    <!-- Row 19 -->
+     <div class="row">
+         <div class="image" onclick="openPDF('Books/Metaphysics of Modernity/The Reign of Quantity and the Signs of the Times.pdf')">
+             <img src="Images/Metaphysics of Modernity/The Reign of Quantity and the Signs of the Times.jpg" 
+             alt="The Reign of Quantity and the Signs of the Times">
+             <b>The Reign of Quantity and the Signs of the Times</b>
+         </div>
+     </div>
+ </div>
+<script>
+    function openPDF(pdfUrl) {
+        window.open(pdfUrl, '_blank');
+    }
+
+    
+</script>
+
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" style="position: fixed; bottom: 20px; right: 20px;">
+        <i class="fas fa-arrow-up"></i> Scroll to Top
+    </button>
+
+    <!-- JavaScript Function for Smooth Scrolling -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
